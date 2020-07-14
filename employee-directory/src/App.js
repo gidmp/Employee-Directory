@@ -9,7 +9,9 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            employees : []
+            employees : [],
+            filteredEmployee : [],
+            filterText : ''
         }; 
     }    
 
@@ -24,17 +26,44 @@ class App extends Component {
             //what comes back from the API
             .then(res => {
                 this.setState({employees : res.data.results})
+                //allows for repopulation of table after search imput is deleted
+                this.setState({filteredEmployee: this.state.employees})
             })
             .catch(err => console.log(err));
     }
 
-    //render the tables
+    handleInputChange = event =>{
+        //get the value of search input
+        const value = event.target.value;
+
+        // Updating the input's state equal to input's value
+        this.setState({
+          filterText: value
+        });
+        
+        //filter the employee list by name based on the value of input text
+        let filteredEmployees = this.state.employees.filter(name => {
+            let employeeName = `${name.name.first} ${name.name.last}`;
+            return employeeName.toLowerCase().indexOf(this.state.filterText.toLowerCase()) >= 0
+        })
+
+        //set the state to the filtered employees
+        this.setState({
+            filteredEmployee: filteredEmployees
+        })
+
+    }
+
+    //render the tables and pass the states as props to each components
     render() {
         return(
             <div>
                 <Header />
-                <SearchForm />
-                <Table employees = {this.state.employees}/>
+                <SearchForm 
+                    handleInputChange = {this.handleInputChange} 
+                    value={this.state.filterText}
+                />
+                <Table employees = {this.state.filteredEmployee}/>
             </div>
         )
     }

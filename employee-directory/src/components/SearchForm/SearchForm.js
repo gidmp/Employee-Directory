@@ -1,12 +1,19 @@
 import React from "react";
 import "./SearchForm.css"
 
-function SearchForm () {
+function SearchForm (props) {
     return (
         <div>
             <form>
                 <div className="form-group">
-                    <input type="email" className="form-control" placeholder="Search"></input>
+                    <input 
+                        value = {props.value}
+                        onChange={props.handleInputChange}
+                        type="text" 
+                        className="form-control" 
+                        placeholder="Search" 
+                        name = "employee"
+                    />
                 </div>
             </form>
         </div>
