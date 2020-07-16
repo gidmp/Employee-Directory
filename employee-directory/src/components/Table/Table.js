@@ -8,11 +8,11 @@ function Table(props) {
             <table>
                 <thead>
                     <tr>
-                        <th scope="col">Image</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Phone</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">DOB</th>
+                        <th scope="col" id ="image" onClick = {props.handleSorting}>Image</th>
+                        <th scope="col" id ="name" onClick = {props.handleSorting}><i className="fas fa-sort" /> Name</th>
+                        <th scope="col" id ="phone" onClick = {props.handleSorting}><i className="fas fa-sort" /> Phone</th>
+                        <th scope="col" id ="email" onClick = {props.handleSorting}><i className="fas fa-sort" /> Email</th>
+                        <th scope="col" id = "dob" onClick = {props.handleSorting}><i className="fas fa-sort" /> DOB</th>
                     </tr>
                 </thead>
                 <tbody>
