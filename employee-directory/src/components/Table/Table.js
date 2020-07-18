@@ -4,7 +4,7 @@ import "./Table.css"
 
 function Table(props) {
     return (
-        <section>
+        <section id = "table-form">
             <table>
                 <thead>
                     <tr>

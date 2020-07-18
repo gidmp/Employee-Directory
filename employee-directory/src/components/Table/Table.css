@@ -1,0 +1,21 @@
+#table-form{
+    justify-content: center;
+    text-align: center;
+}
+
+table{
+    position: absolute;
+    width:80%; 
+    left:10%; 
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody{
+    margin: 1rem 0 0 1rem;
+
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}

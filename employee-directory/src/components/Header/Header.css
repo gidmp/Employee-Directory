@@ -1,3 +1,10 @@
-h1 {
-    color: blue;
+.header-text {
+    color: white;
+    text-align: center;
+    margin: 2rem 0 0 2rem;
+}
+
+#header { 
+    background-color: darkblue;
+    border-bottom: 3px solid red;
 }
