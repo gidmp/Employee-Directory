@@ -1,58 +1,49 @@
-# Unit 19 React Homework: Employee Directory
+# [Employee Directory](https://gidmp.github.io/Employee-Directory/)
 
-## Overview
+## Description
+Workout Tracker is a full-stack web app that enables user to keep track of their exercise progress.
+User can add and then view their workout progress in their dashboard to see their workout status.
 
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+This app was made with mongoDB as its theme. My task is to take the pre-built HTML, CSS and JS
+and create the back-end connection to the server and mongoDB database using mongoose.
 
-You can get a list of 200 employees here: https://randomuser.me/api/?results=200&nat=u
+## Table of Contents
+* [Technologies](#technologies)
+* [Usage](#usage)
+* [Demo](#demo)
+* [Directions for Future Development](#Directions-for-future-Development)
+* [Questions](#questions)
 
-## User Story
+## Technologies
+------
+* HTML
+* CSS
+* JavaScript
+* Node.js
+* REACT
+* Axios
 
-- As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+## Usage
+------
+* Navigate to the [deployed Github Pages App](https://gidmp.github.io/Employee-Directory/).
+* On the Home page, user can scroll and view the employee list 
+* User can filter the employee by name using the search bar
+* User can click on the header to toggle employeed by alphabet, phone number, email and date of birth in ascending or descending order
 
-## Business Context
+## Demo
+------
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+![](./public/images/employee-directory.gif)
 
-## Acceptance Criteria
+## Directions for Future Development
+------
+* update HTML and CSS to be more streamlined and pleasing to look
+* Use an actual company employee list instead of dummy list
 
-Given a table of random users, when the user loads the page, a table of employees should render.
+## Questions
+------
 
-The user should be able to:
+<img src="https://avatars2.githubusercontent.com/u/6896220?v=4" alt="a guy" width="75px" height="75px">
 
-- Sort the table by at least one category
+If you have any questions, please contact me, [Daniel Luke Tanoeihusada](danielluke08@gmail.com) directly at danielluke08@gmail.com
 
-- Filter the users by at least one property.
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
-
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-Follow these guidelines for committing:
-
-- Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-- Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-- Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-- Test your application before you commit to ensure functionality at every step in the development process
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-- the URL to the deployed application
-
-- the URL to the Github repository
-
-
-use array.filter to search employee
-give ability to sort for each column
-just build react frontend
